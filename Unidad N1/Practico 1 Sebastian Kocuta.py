@@ -85,9 +85,9 @@
 #𝐼𝑀𝐶 = (𝑝𝑒𝑠𝑜 𝑒𝑛 𝑘𝑔 *(𝑎𝑙𝑡𝑢𝑟𝑎 𝑒𝑛 𝑚))/2
 #2
 
-#peso = float(input ("Ingrese su peso en kg "))
-#altura = float(input ("Ingrese su altura en mts "))
-#print (f"Su Imc es " , peso/(altura**2))
+peso = float(input ("Ingrese su peso en kg "))
+altura = float(input ("Ingrese su altura en mts "))
+print (f"Su Imc es " , peso/(altura**2))
 
 #9) Crear un programa que pida al usuario una temperatura en grados Celsius e imprima por
 #pantalla su equivalente en grados Fahrenheit. Tener en cuenta la siguiente equivalencia:
