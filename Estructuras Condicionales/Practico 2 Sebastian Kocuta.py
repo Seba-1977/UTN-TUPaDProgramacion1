@@ -45,7 +45,7 @@
 #    print ("Es Adolecente")
 #elif (edad>=18 and edad <30):
 #    print ("Adulto/a joven")
-#elif (edad >=30):
+#else (edad >=30):
 #    print ("Adulto/a")
 
 
@@ -56,12 +56,14 @@
 #de la función len() en Python para evaluar la cantidad de elementos que tiene un iterable tal
 #como una lista o un string.
 
-contrasena = str (input("Introducir contraseña "))
-longitud = len(contrasena)
-if (longitud >=8 and longitud <=14):
-    print ("Ha ingresado una contraseña correcta")
-else:
-    print ("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
+
+
+#contrasena = str (input("Introducir contraseña "))
+#longitud = len(contrasena)
+#if (longitud >=8 and longitud <=14):
+#    print ("Ha ingresado una contraseña correcta")
+#else:
+#    print ("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
 
 #6) El paquete statistics de python contiene funciones que permiten tomar una lista de números
 #y calcular la moda, la mediana y la media de dichos números. Un ejemplo de su uso es el
@@ -93,6 +95,28 @@ else:
 #pantalla; en caso contrario, dejar el string tal cual lo ingresó el usuario e imprimirlo por
 #pantalla.
 
+#frase = str (input("Ingrese una frase o palabra "))
+#ultima_letra = frase[-1]
+#voc = (f"a")
+#voc1 = (f"e")
+#voc2 = (f"i")
+#voc3 = (f"o")
+#voc4 = (f"u")
+
+#if (ultima_letra == voc):
+#    print ((frase) , "!")
+#elif (ultima_letra == voc1):
+#    print ((frase) , "!")
+#elif (ultima_letra == voc2):
+#    print ((frase) , "!")
+#elif (ultima_letra == voc3):
+#    print ((frase) , "!")
+#elif (ultima_letra == voc4):
+#    print ((frase) , "!")
+
+#else:
+#    print (frase)
+
 
 #8) Escribir un programa que solicite al usuario que ingrese su nombre y el número 1, 2 o 3
 #dependiendo de la opción que desee:
@@ -102,6 +126,25 @@ else:
 #El programa debe transformar el nombre ingresado de acuerdo a la opción seleccionada por el
 #usuario e imprimir el resultado por pantalla. Nota: investigue uso de las funciones upper(),
 #lower() y title() de Python para convertir entre mayúsculas y minúsculas.#
+
+#nombre = str (input("Ingrese su nombre "))
+
+#opcion = int (input("Ingrese 1 si quiere su nombre en mayúsculas\n"
+#                    "Ingrese 2 si quiere su nombre en minúsculas\n"
+#                    "Ingrese 3 si quiere su nombre con la primera letra mayúscula\n"))
+
+#if (opcion == 1):
+#    print (nombre.upper())
+
+#elif (opcion == 2):
+#    print (nombre.lower())
+
+#elif (opcion == 3):
+#    print (nombre.title())
+
+#else:
+#    pass
+    
 
 #9) Escribir un programa que pida al usuario la magnitud de un terremoto, clasifique la
 #magnitud en una de las siguientes categorías según la escala de Richter e imprima el resultado
@@ -138,3 +181,4 @@ else:
 #Escribir un programa que pregunte al usuario en cuál hemisferio se encuentra (N/S), qué mes
 #del año es y qué día es. El programa deberá utilizar esa información para imprimir por pantalla
 #si el usuario se encuentra en otoño, invierno, primavera o verano.
+#
