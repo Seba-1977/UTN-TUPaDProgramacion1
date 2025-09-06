@@ -90,6 +90,28 @@
 #Nota: el bloque de código anterior crea una lista con 50 números entre 1 y 100 elegidos de
 #forma aleatoria.
 
+#import random
+#from statistics import mode, median, mean
+
+#numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
+
+#moda = mode(numeros_aleatorios)
+#mediana = median(numeros_aleatorios)
+#media = mean(numeros_aleatorios)
+
+#if media > mediana and mediana > moda:
+#    sesgo = "positivo o a la derecha"
+#elif media < mediana and mediana < moda:
+#    sesgo = "negativo o a la izquierda"
+#else:
+#    sesgo = "sin sesgo"
+
+#print(f"La lista de números aleatorios es: {numeros_aleatorios}")
+#print(f"Moda: {moda}")
+#print(f"Mediana: {mediana}")
+#print(f"Media: {media}")
+#print(f"La distribución tiene un sesgo {sesgo}.")
+
 #7) Escribir un programa que solicite una frase o palabra al usuario. Si el string ingresado
 #termina con vocal, añadir un signo de exclamación al final e imprimir el string resultante por
 #pantalla; en caso contrario, dejar el string tal cual lo ingresó el usuario e imprimirlo por
@@ -158,6 +180,28 @@
 #● Mayor o igual que 6 y menor que 7: "Muy Fuerte" (puede causar daños significativos).
 #● Mayor o igual que 7: "Extremo" (puede causar graves daños a gran escala).
 
+#magnitud = float (input("Ingrese la magnitud de un terremoto "))
+
+#if (magnitud < 3):
+#    print ("Muy leve")
+
+#elif (magnitud <= 3 and magnitud<4):
+#    print ("Leve")
+
+#elif (magnitud <= 4 and magnitud<5):
+#    print ("Moderado")
+
+#elif (magnitud <= 5 and magnitud<6):
+#    print ("Fuerte")
+
+#elif (magnitud <= 6 and magnitud<7):
+#    print ("Muy Fuerte")
+
+#elif (magnitud >=7):
+#    print ("Extremo")
+
+#else:
+#   pass
 
 #10) Utilizando la información aportada en la siguiente tabla sobre las estaciones del año
 #Periodo del año
@@ -181,4 +225,32 @@
 #Escribir un programa que pregunte al usuario en cuál hemisferio se encuentra (N/S), qué mes
 #del año es y qué día es. El programa deberá utilizar esa información para imprimir por pantalla
 #si el usuario se encuentra en otoño, invierno, primavera o verano.
-#
+
+#hemisferio = input("¿En qué hemisferio se encuentra? (N/S): ").upper()   #en que hemisferio estoy y lo pasa a mayuscula
+#mes = input("¿Qué mes del año es?: ").capitalize()   #primera letra del mes en mayuscula
+#dia = int(input("¿Qué día del mes es?: "))
+
+#estacion = ""     #cargo variable
+
+#if hemisferio == 'N':         #primera comparacion
+#    if (mes == "Diciembre" and dia >= 21) or (mes == "Enero") or (mes == "Febrero") or (mes == "Marzo" and dia <= 20):
+#        estacion = "Invierno"
+#    elif (mes == "Marzo" and dia >= 21) or (mes == "Abril") or (mes == "Mayo") or (mes == "Junio" and dia <= 20):
+#        estacion = "Primavera"
+#    elif (mes == "Junio" and dia >= 21) or (mes == "Julio") or (mes == "Agosto") or (mes == "Septiembre" and dia <= 20):
+#        estacion = "Verano"
+#    elif (mes == "Septiembre" and dia >= 21) or (mes == "Octubre") or (mes == "Noviembre") or (mes == "Diciembre" and dia <= 20):
+#        estacion = "Otoño"
+#elif hemisferio == 'S':      #sino fue hemisferio N es S sino Hemisferio no valido
+#    if (mes == "Diciembre" and dia >= 21) or (mes == "Enero") or (mes == "Febrero") or (mes == "Marzo" and dia <= 20):
+#        estacion = "Verano"
+#    elif (mes == "Marzo" and dia >= 21) or (mes == "Abril") or (mes == "Mayo") or (mes == "Junio" and dia <= 20):
+#        estacion = "Otoño"
+#    elif (mes == "Junio" and dia >= 21) or (mes == "Julio") or (mes == "Agosto") or (mes == "Septiembre" and dia <= 20):
+#        estacion = "Invierno"
+#    elif (mes == "Septiembre" and dia >= 21) or (mes == "Octubre") or (mes == "Noviembre") or (mes == "Diciembre" and dia <= 20):
+#        estacion = "Primavera"
+#else:
+#    estacion = "Hemisferio no válido."    #por si escribo algun dato de forma incorrecta
+
+#print(f"Usted se encuentra en: {estacion}")
