@@ -3,15 +3,28 @@
 #1) Crea un programa que imprima en pantalla todos los números enteros desde 0 hasta 100
 #(incluyendo ambos extremos), en orden creciente, mostrando un número por línea.
 
+#for num in range (0,101 ):     # cuenta desde 0 a 100 inclusive
+#    print (num)
 
 #2) Desarrolla un programa que solicite al usuario un número entero y determine la cantidad de
 #dígitos que contiene.
 
-
+#num = int(input("Ingrese un numero entero "))            #solicita el ingreso de un numero entero
+#cant_digitos = len(str(num))                             # len devuelve la logitud de num 
+#print (f"El numero tiene" , (cant_digitos) , "digitos")   #imprime por pantalla cantidad de digitos
 
 #3) Escribe un programa que sume todos los números enteros comprendidos entre dos valores
 #dados por el usuario, excluyendo esos dos valores.
 
+num1 = int(input("Ingrese un numero entero "))  
+num2 = int(input("Ingrese un segundo numero entero menor al num1"))  
+
+suma = 0
+        # Iterar desde el número siguiente al menor hasta el número anterior al mayor
+for numero_actual in range(num2 + 1, num1):
+            suma += numero_actual
+
+print(f"La suma de los enteros entre {num1} y {num2} (excluyendo ellos) es: {suma}")
 
 
 
