@@ -16,16 +16,15 @@
 #3) Escribe un programa que sume todos los números enteros comprendidos entre dos valores
 #dados por el usuario, excluyendo esos dos valores.
 
-num1 = int(input("Ingrese un numero entero "))  
-num2 = int(input("Ingrese un segundo numero entero menor al num1"))  
+num1 = int(input("Ingrese un numero entero "))  #ingreso de datos
+num2 = int(input("Ingrese un segundo numero entero menor al num1 "))  #ingreso de datos
 
-suma = 0
-        # Iterar desde el número siguiente al menor hasta el número anterior al mayor
-for numero_actual in range(num2 + 1, num1):
-            suma += numero_actual
+suma = 0                                      # cargo variable con valor cero
+        
+for numero_actual in range(num2 + 1, num1): 
+    suma += numero_actual                  #suma los numeros internos excluyendo los extremos
 
-print(f"La suma de los enteros entre {num1} y {num2} (excluyendo ellos) es: {suma}")
-
+print(f"La suma de todos los numeros es: {suma}") #imprime en pantalla el resultado
 
 
 #4) Elabora un programa que permita al usuario ingresar números enteros y los sume en
