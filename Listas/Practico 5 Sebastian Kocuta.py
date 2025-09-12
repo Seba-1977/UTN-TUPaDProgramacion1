@@ -305,27 +305,46 @@
 #• Mostrar el día con mayores ventas totales.
 #• Indicar cuál fue el producto más vendido en la semana.
 
-ventas = [                    #mariz de 4x7
-    [5, 3, 2, 7, 6, 5, 8],    #Venta producto 1
-    [4, 8, 5, 2, 9, 2, 7],    #Venta producto 2
-    [8, 3, 4, 5, 6, 1, 6],    #Venta producto 3
-    [1, 2, 4, 9, 8, 3, 4]     #Venta producto 4
-]
+#ventas = [                    #mariz de 4x7
+#    [5, 3, 2, 7, 6, 5, 8],    #Venta producto 1
+#    [4, 8, 5, 2, 9, 2, 7],    #Venta producto 2
+#    [8, 3, 4, 5, 6, 1, 6],    #Venta producto 3
+#    [1, 2, 4, 9, 8, 3, 4]     #Venta producto 4
+#]
 
 #Ventas totales por producto, suma horizontal de productos
-totales_productos = []
+#totales_productos = []
 
-for i in range (4):
-    totales_producto = 0
-    for j in range (7):
-        totales_producto+= ventas [i][j]
-    totales_productos.append(totales_producto)
-    print (f"Producto {i+1}:{totales_producto}")
+#for i in range (4):
+#    totales_producto = 0
+#    for j in range (7):
+#        totales_producto+= ventas [i][j]
+#    totales_productos.append(totales_producto)
+#    print (f"Producto {i+1}:{totales_producto}")
 
-#Dia con mayor ventas totales, suma verticad de productos para calcular venta de 1 dia
+#Dia con mayor ventas totales, suma vertical de productos para calcular venta de 1 dia
 
-mayor_ventas = 0
-dia_mayor = 0
+#mayor_ventas = 0
+#dia_mayor = 0
 
+#for j in range (7):
+#    total_dia=0
+#    for i in range(4):
+#        total_dia += ventas [i] [j]
+#    print (f"Total del dia {j+1}: {total_dia}")
+#    if total_dia > mayor_ventas:
+#        mayor_ventas = total_dia
+#        dia_mayor = j
+#print (f"El dia con mayores ventas fue el {dia_mayor+1}, con {mayor_ventas} ventas.")
 
-#Producto mas vendido en la semana
+#Producto mas vendido en la semana, se suman los productos por semana y se busca el mayor
+
+#mayor_producto = 0
+#indice_mayor = 0
+
+#for i in range(4):
+#    if totales_productos[i] > mayor_producto:
+#        mayor_producto = totales_productos[i]
+#        indice_mayor = i
+
+#print(f"El producto que mas se vendio fue el {indice_mayor+1}, con {mayor_producto} ventas en la semana")
