@@ -304,3 +304,28 @@
 #• Mostrar el total vendido por cada producto.
 #• Mostrar el día con mayores ventas totales.
 #• Indicar cuál fue el producto más vendido en la semana.
+
+ventas = [                    #mariz de 4x7
+    [5, 3, 2, 7, 6, 5, 8],    #Venta producto 1
+    [4, 8, 5, 2, 9, 2, 7],    #Venta producto 2
+    [8, 3, 4, 5, 6, 1, 6],    #Venta producto 3
+    [1, 2, 4, 9, 8, 3, 4]     #Venta producto 4
+]
+
+#Ventas totales por producto, suma horizontal de productos
+totales_productos = []
+
+for i in range (4):
+    totales_producto = 0
+    for j in range (7):
+        totales_producto+= ventas [i][j]
+    totales_productos.append(totales_producto)
+    print (f"Producto {i+1}:{totales_producto}")
+
+#Dia con mayor ventas totales, suma verticad de productos para calcular venta de 1 dia
+
+mayor_ventas = 0
+dia_mayor = 0
+
+
+#Producto mas vendido en la semana
