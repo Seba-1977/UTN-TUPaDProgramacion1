@@ -57,7 +57,32 @@
 #5) Crea un juego en el que el usuario deba adivinar un número aleatorio entre 0 y 9. Al final, el
 #programa debe mostrar cuántos intentos fueron necesarios para acertar el número.
 
+#import random   #biblioteca numeros aleaorios
 
+#numero_aleatorio = random.randint(0, 9)  # Genera un número entre 0 y 9 (inclusive)
+#intentos = 0
+
+
+#print("Ingrese un numero de  0 y 9.")
+
+# 2. Bucle de juego
+#while True:
+#    try:
+#        numero_usuario_str = input("Introducir numero: ")
+#        numero_usuario = int(numero_usuario_str)
+#        intentos += 1 # Aumenta el contador de intentos
+
+        
+#        if numero_usuario == numero_aleatorio:   #compara si el numero ingresa es igual al aleatorio
+#            print(f"Adivinaste el número en {intentos} intentos.")
+#            break  # Sale del bucle si se acertó
+#        elif numero_usuario < numero_aleatorio:
+#            print("El número que busco es mayor.")
+#        else: # numero_usuario > numero_aleatorio
+#            print("El número que busco es menor.")
+
+#    except ValueError:
+#        print("Por favor, introduce un número válido (0-9).")
 
 #6) Desarrolla un programa que imprima en pantalla todos los números pares comprendidos
 #entre 0 y 100, en orden decreciente.
@@ -81,7 +106,6 @@
 
 #suma_total = sum(range(numero_ingresado + 1)) #suma de todos los numeros hasta el numero ingresado
 
-# 3. Mostrar el resultado
 #print(f"La suma de todos los números desde 0 hasta {numero_ingresado} es: {suma_total}")
 
 
@@ -90,7 +114,38 @@
 #negativos y cuántos son positivos. (Nota: para probar el programa puedes usar una cantidad
 #menor, pero debe estar preparado para procesar 100 números con un solo cambio).
 
+#cantidad_numeros = 100   #numeros a ingresar
 
+#pares_count = 0
+#impares_count = 0
+#positivos_count = 0
+#negativos_count = 0
+
+#for i in range(cantidad_numeros):    #ingreso de numeros
+#    while True:
+#        try:
+#            numero = int(input(f"Ingrese el número {i + 1}: "))
+#            break
+#        except ValueError:
+#            print("Entrada inválida. Por favor, ingrese un número entero.")
+#
+#    
+#    if numero % 2 == 0:      #para saber si es par o imprar
+#        pares_count += 1
+#    else:
+#        impares_count += 1
+#
+##    if numero > 0:
+#        positivos_count += 1
+#    elif numero < 0:
+#        negativos_count += 1
+
+
+#print(f"\nResultados:")
+#print(f"Cantidad de números pares: {pares_count}")
+#print(f"Cantidad de números impares: {impares_count}")
+#print(f"Cantidad de números positivos: {positivos_count}")
+#print(f"Cantidad de números negativos: {negativos_count}")
 
 
 
@@ -98,6 +153,28 @@
 #media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe
 #poder procesar 100 números cambiando solo un valor).
 
+#numeros = []   #inicializo lista vacia
+
+#print("Por favor, ingresa 100 números enteros:")  #Ingreso 100 numeros
+#for i in range(100):
+#    while True:
+#        try:
+#            num_str = input(f"Ingresa el número #{i + 1}: ")
+#            num = int(num_str)
+#            numeros.append(num) # Agrega el número a la lista
+#            break # Sale del bucle de reintento si la entrada es válida
+#        except ValueError:
+#            print("Entrada no válida. Por favor, ingresa un número entero.")
+
+
+#suma_total = sum(numeros) #suma total de la lista
+
+#cantidad_numeros = len(numeros)  #suma de la cantidad de numeros por si cambio y no es 100
+
+#media = suma_total / cantidad_numeros   #calculo promedio
+
+#print(f"\nLa suma de los 100 números es: {suma_total}")  #valores en pantalla
+#print(f"La media de los 100 números es: {media}")
 
 
 #10) Escribe un programa que invierta el orden de los dígitos de un número ingresado por el
