@@ -58,24 +58,35 @@
 
 #Definicion de Funciones
 
-pi=3.14
-def calcular_area_circulo(radio):
-    return pi *  radio * 2
+#pi=3.14
+#def calcular_area_circulo(radio):
+#    return (pi *  radio * 2)
     
-def calcular_perimetro_circulo(radio):
-    return pi * radio  **2
+#def calcular_perimetro_circulo(radio):
+#    return pi * radio  **2
 
 #Programa Principal
 
-radio =input(f"ingrese el radio para calcular su area  y su perimetro: ")
+#radio =float(input(f"ingrese el radio para calcular su area  y su perimetro: "))
 
-print(f"El area del circulo es de {calcular_area_circulo(radio)} y su perimetro {calcular_perimetro_circulo(radio)}")
+#print(f"El area del circulo es de {calcular_area_circulo (radio):.2f} y su perimetro {calcular_perimetro_circulo (radio):.2f}")
 
 #5. Crear una función llamada segundos_a_horas(segundos) que reciba
 #una cantidad de segundos como parámetro y devuelva la cantidad
 #de horas correspondientes. Solicitar al usuario los segundos y mostrar el resultado usando esta función.
 
 
+#Definicion de Funciones
+#def segundos_a_horas(segundos):
+#    return segundos / 3600
+
+#Programa Principal
+
+#segundos = float(input("Ingresa cantidad de segundos para saber a cuantas horas equivale:  "))
+
+#horas=segundos_a_horas(segundos)
+
+#print(f"Los {segundos} segundos equivalen a {horas:.2f} horas")
 
 
 #6. Crear una función llamada tabla_multiplicar(numero) que reciba un
@@ -83,19 +94,59 @@ print(f"El area del circulo es de {calcular_area_circulo(radio)} y su perimetro 
 #número del 1 al 10. Pedir al usuario el número y llamar a la función.
 
 
+#Definicion de Funciones
+#def tabla_multiplicar(numero):
+#    for i in range(1, 11):
+#        resultado = numero * i
+#        print(f"{numero} x {i} = {resultado}")
 
+#Programa Principal
+
+#numero = int(input(f"Ingrese un numero para obtener su tabla de multiplicar:  "))
+
+#tabla = tabla_multiplicar(numero)
+
+#print(tabla)
 
 #7. Crear una función llamada operaciones_basicas(a, b) que reciba
-#dos números como parámetros y devuelva una tupla con el resultado de sumarlos, restarlos, multiplicarlos y dividirlos. Mostrar los resultados de forma clara.
+#dos números como parámetros y devuelva una tupla con el resultado de sumarlos, restarlos, multiplicarlos y dividirlos. 
+# Mostrar los resultados de forma clara.
 
+#Definicion de Funciones
+def operaciones_basicas(a, b):
+    suma = a + b
+    resta = a - b
+    multiplicacion =  a * b
+    if (b!=0):
+        division = a/b
+    else:
+        division = print("No se puede dividir por cero ")
 
+    return (suma, resta, multiplicacion, division)
 
+#Programa Principal
+
+num1 = float(input("Ingrese un numero: "))
+num2 = float(input("Ingrese un segundo numero:  "))
+
+resultados = operaciones_basicas(num1, num2)
+
+print(f"Los números ingresados son: {num1} y {num2}")
+print(f"Resultado de la suma: {resultados[0]}")
+print(f"Resultado de la resta: {resultados[1]}")
+print(f"Resultado de la multiplicación: {resultados[2]}")
+print(f"Resultado de la división: {resultados[3]}")
 
 #8. Crear una función llamada calcular_imc(peso, altura) que reciba el
 #peso en kilogramos y la altura en metros, y devuelva el índice de
 #masa corporal (IMC). Solicitar al usuario los datos y llamar a la función para mostrar el resultado con dos decimales.
 
 
+
+#Definicion de Funciones
+
+
+#Programa Principal
 
 
 #9. Crear una función llamada celsius_a_fahrenheit(celsius) que reciba
@@ -105,6 +156,11 @@ print(f"El area del circulo es de {calcular_area_circulo(radio)} y su perimetro 
 
 
 
+#Definicion de Funciones
+
+
+#Programa Principal
+
 
 
 #10.Crear una función llamada calcular_promedio(a, b, c) que reciba
@@ -112,6 +168,11 @@ print(f"El area del circulo es de {calcular_area_circulo(radio)} y su perimetro 
 #Solicitar los números al usuario y mostrar el resultado usando esta
 #función.
 
+
+#Definicion de Funciones
+
+
+#Programa Principal
 
 
 #Consejo:
