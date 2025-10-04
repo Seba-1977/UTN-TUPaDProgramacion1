@@ -113,70 +113,93 @@
 # Mostrar los resultados de forma clara.
 
 #Definicion de Funciones
-def operaciones_basicas(a, b):
-    suma = a + b
-    resta = a - b
-    multiplicacion =  a * b
-    if (b!=0):
-        division = a/b
-    else:
-        division = print("No se puede dividir por cero ")
+#def operaciones_basicas(a, b):
+#    suma = a + b
+#    resta = a - b
+#    multiplicacion =  a * b
+#    if (b!=0):
+#        division = a/b
+#    else:
+#        division = print("No se puede dividir por cero ")
 
-    return (suma, resta, multiplicacion, division)
+#    return (suma, resta, multiplicacion, division)
 
 #Programa Principal
 
-num1 = float(input("Ingrese un numero: "))
-num2 = float(input("Ingrese un segundo numero:  "))
+#num1 = float(input("Ingrese un numero: "))
+#num2 = float(input("Ingrese un segundo numero:  "))
 
-resultados = operaciones_basicas(num1, num2)
+#resultados = operaciones_basicas(num1, num2)
 
-print(f"Los números ingresados son: {num1} y {num2}")
-print(f"Resultado de la suma: {resultados[0]}")
-print(f"Resultado de la resta: {resultados[1]}")
-print(f"Resultado de la multiplicación: {resultados[2]}")
-print(f"Resultado de la división: {resultados[3]}")
+#print(f"Los números ingresados son: {num1} y {num2}")
+#print(f"Resultado de la suma: {resultados[0]}")
+#print(f"Resultado de la resta: {resultados[1]}")
+#print(f"Resultado de la multiplicación: {resultados[2]}")
+#print(f"Resultado de la división: {resultados[3]}")
 
 #8. Crear una función llamada calcular_imc(peso, altura) que reciba el
 #peso en kilogramos y la altura en metros, y devuelva el índice de
 #masa corporal (IMC). Solicitar al usuario los datos y llamar a la función para mostrar el resultado con dos decimales.
 
 
-
 #Definicion de Funciones
-
+#def calcular_imc(peso,altura):
+#    imc = peso / (altura ** 2)
+#    return imc
 
 #Programa Principal
 
+#peso = float(input("Ingrese su peso en kg: "))
+#altura = float(input("Ingrese su altura en metros:  "))
+
+#resultado = calcular_imc(peso,altura)
+
+#print(f"Su indice me masa corporal es {resultado:.2f}")
 
 #9. Crear una función llamada celsius_a_fahrenheit(celsius) que reciba
 #una temperatura en grados Celsius y devuelva su equivalente en
 #Fahrenheit. Pedir al usuario la temperatura en Celsius y mostrar el
 #resultado usando la función.
 
-
-
 #Definicion de Funciones
-
+#def celsius_a_fahrenheit(celsius):
+#    c_f= (celsius * 9/5) + 32
+#    return c_f
 
 #Programa Principal
 
+#celsius = float(input("Ingrese los grados celsius para conocer su equivalente en fahrenheit:  "))
+#print()
+#fahrenheit = celsius_a_fahrenheit(celsius)
 
+#print(f"{celsius} grados celsius equivalen a {fahrenheit} grados fahrenheit")
+#print()
 
 #10.Crear una función llamada calcular_promedio(a, b, c) que reciba
 #tres números como parámetros y devuelva el promedio de ellos.
 #Solicitar los números al usuario y mostrar el resultado usando esta
 #función.
-
-
+"""
 #Definicion de Funciones
 
+def calcular_promedio(a, b, c):
+    promedio = (a + b + c)/3
+    return promedio
 
 #Programa Principal
 
+print("***Calculadora de promedio de 3 numeros***")
+num1 = float(input("Ingrese un numero:  "))
+num2 = float(input("Ingrese un numero:  "))
+num3 = float(input("Ingrese un numero:  "))
+
+resultado = calcular_promedio(num1,num2,num3)
+
+print(f"El promedio entre los 3 numeros es {resultado:.2f}")
 
 #Consejo:
 #Antes de empezar, analiza cada problema y piensa cómo dividirlo en
 #pasos más pequeños utilizando funciones.
 #Al terminar, prueba cada función con diferentes entradas para verificar
 #que funciona correctamente.
+"""
