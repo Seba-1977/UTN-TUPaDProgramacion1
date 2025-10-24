@@ -19,11 +19,12 @@
 #● Pera = 2300
 
 
-diccionario_precios_frutas = {'Banana': 1200, 'Ananá': 2500, 'Melón': 3000, 'Uva':
-1450}
-diccionario_precios_frutas["naranjas"]=1200
-print = diccionario_precios_frutas
+#diccionario_precios_frutas = {'Banana': 1200, 'Ananá': 2500, 'Melón': 3000, 'Uva': 1450}
+#diccionario_precios_frutas["naranjas"]=1200
+#diccionario_precios_frutas["Manzanas"]=1500
+#diccionario_precios_frutas["Peras"]=2300
 
+#print (diccionario_precios_frutas)
 
 #2) Siguiendo con el diccionario precios_frutas que resulta luego de ejecutar el código
 #desarrollado en el punto anterior, actualizar los precios de las siguientes frutas:
@@ -31,23 +32,49 @@ print = diccionario_precios_frutas
 #● Manzana = 1700
 #● Melón = 2800
 
+#diccionario_precios_frutas = {'Banana': 1330, 'Ananá': 2500, 'Melón': 3000, 'Uva': 1450}
+#diccionario_precios_frutas["naranjas"]=1200
+#diccionario_precios_frutas["Manzanas"]=1700
+#diccionario_precios_frutas["Peras"]=2300
+#diccionario_precios_frutas["Melón"]=2800
 
-
+#print (diccionario_precios_frutas)
 
 #3) Siguiendo con el diccionario precios_frutas que resulta luego de ejecutar el código
 #desarrollado en el punto anterior, crear una lista que contenga únicamente las frutas sin los
 #precios.
 
+#diccionario_precios_frutas = {'Peras', 'Melón', 'Manzanas', 'Uva', 'Naranja', 'Ananá', 'Banana'}
 
+#print (diccionario_precios_frutas)
 
 #4) Escribí un programa que permita almacenar y consultar números telefónicos.
 #• Permití al usuario cargar 5 contactos con su nombre como clave y número como valor.
 #• Luego, pedí un nombre y mostrale el número asociado, si existe.
 
+#agenda = {}
+
+#for i in range(5):
+#    nombre = input(f"Ingrese el nombre del contacto {i+1}: ")
+#    numero = input(f"Ingrese el número telefónico de {nombre}: ")
+#    
+#    agenda[nombre] = numero
+
+#print("\nAgenda cargada correctamente")
+#print("Contactos guardados:")
+#print(agenda) 
+
+#consulta = input("\nIngresá el nombre del contacto que querés consultar: ")
+
+#if consulta in agenda:
+#    print(f"El número de {consulta} es: {agenda[consulta]}")
+#else:
+#    print(f"No se encontró ningún contacto con el nombre '{consulta}'.")
 
 #5) Solicita al usuario una frase e imprime:
 #• Las palabras únicas (usando un set).
 #• Un diccionario con la cantidad de veces que aparece cada palabra.
+
 
 
 
