@@ -174,9 +174,42 @@
 #Permití consultar qué actividad hay en cierto día y hora.
 
 
+#agenda = {
+#    ("lunes", "09:00"): "Reunión con el equipo",
+#    ("martes", "14:00"): "Clase de inglés",
+#    ("miércoles", "10:30"): "Cita médica",
+#    ("viernes", "18:00"): "Gimnasio"
+#}
 
+
+#print("AGENDA ACTUAL:")
+#for (dia, hora), evento in agenda.items():
+#    print(f"{dia.capitalize()} a las {hora} → {evento}")
+
+#dia = input("\nIngrese el día que desea consultar: ").lower()
+#hora = input("Ingrese la hora (formato HH:MM): ")
+
+#clave = (dia, hora)
+
+#if clave in agenda:
+#    print(f"\nEl evento programado el {dia} a las {hora} es: {agenda[clave]}")
+#else:
+#    print(f"\nNo hay ningún evento registrado el {dia} a las {hora}.")
 
 #10) Dado un diccionario que mapea nombres de países con sus capitales, construí un nuevo
 #diccionario donde:
 #• Las capitales sean las claves.
 #• Los países sean los valores.
+
+#paises = {
+#    "Argentina": "Buenos Aires",
+#    "Chile": "Santiago",
+#}
+
+#capitales = {capital: pais for pais, capital in paises.items()}
+
+#print("Diccionario original (país → capital):")
+#print(paises)
+
+#print("\nDiccionario invertido (capital → país):")
+#print(capitales)
