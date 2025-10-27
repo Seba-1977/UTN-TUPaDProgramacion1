@@ -1,0 +1,6 @@
+Arroz,0.9,8
+Fideos,1.9,4
+Harina,1.2,10
+yerba,2.0,8
+Agua,1.0,10
+Queso,10.0,4
