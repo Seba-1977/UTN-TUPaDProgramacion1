@@ -24,7 +24,22 @@
 #indicada. Posteriormente, muestra la serie completa hasta la posición que el usuario
 #especifique.
 
+# Función recursiva para calcular el número de Fibonacci en la posición n
+#def fibonacci(n):
+#    if n == 0:
+#        return 0
+#    elif n == 1:
+#        return 1
+#    else:
+#        return fibonacci(n - 1) + fibonacci(n - 2)
 
+# Solicitar al usuario una posición
+#posicion = int(input("Introduce la posición hasta la que deseas ver la serie de Fibonacci: "))
+
+# Mostrar la serie completa hasta la posición indicada
+#print(f"\nSerie de Fibonacci hasta la posición {posicion}:")
+#for i in range(posicion + 1):
+#    print(f"F({i}) = {fibonacci(i)}")
 
 
 #3) Crea una función recursiva que calcule la potencia de un número base elevado a un
@@ -34,6 +49,25 @@
 #. Prueba esta función en un
 #algoritmo general.
 
+# Función recursiva para calcular la potencia n^m
+#def potencia(base, exponente):
+#    if exponente == 0:  # Caso base
+#        return 1
+#    else:
+#        return base * potencia(base, exponente - 1)  # Paso recursivo
+
+# Algoritmo general
+#print("Cálculo de una potencia\n")
+
+# Solicitar datos al usuario
+#base = float(input("Introduce la base: "))
+#exponente = int(input("Introduce el exponente (entero no negativo): "))
+
+# Calcular la potencia usando la función recursiva
+#resultado = potencia(base, exponente)
+
+# Mostrar el resultado
+#print(f"\n{base}^{exponente} = {resultado}")
 
 
 
