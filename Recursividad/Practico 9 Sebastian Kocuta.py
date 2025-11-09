@@ -88,9 +88,28 @@
 #1 ÷ 2 = 0 resto: 1
 #Leyendo los restos de abajo hacia arriba: 1 0 1 0 → El resultado binario es "1010".
 
+# Función recursiva que convierte un número decimal a binario
+#def decimal_a_binario(n):
+    # Caso base: cuando el número es 0 o 1, se devuelve como cadena
+#    if n < 2:
+#        return str(n)
+#    else:
+#        # Paso recursivo: divide entre 2 y concatena el resto
+#        return decimal_a_binario(n // 2) + str(n % 2)
 
+# Algoritmo general
+#print("Conversión de número decimal a binario (usando recursión)\n")
 
+# Solicitar número al usuario
+#numero = int(input("Introduce un número entero positivo: "))
 
+# Validar que el número sea positivo
+#if numero < 0:
+#    print("Por favor, introduce un número entero positivo.")
+#else:
+    # Convertir y mostrar el resultado
+#    binario = decimal_a_binario(numero)
+#    print(f"\nEl número {numero} en binario es: {binario}")
 
 #5) Implementá una función recursiva llamada es_palindromo(palabra) que reciba una
 #cadena de texto sin espacios ni tildes, y devuelva True si es un palíndromo o False si no
@@ -99,9 +118,28 @@
 #La solución debe ser recursiva.
 #No se debe usar [::-1] ni la función reversed().
 
+# Función recursiva para verificar si una palabra es palíndromo
+#def es_palindromo(palabra):
+    # Caso base 1: palabra vacía o de un solo carácter → es palíndromo
+#    if len(palabra) <= 1:
+#        return True
+    # Caso base 2: los extremos no coinciden → no es palíndromo
+#    if palabra[0] != palabra[-1]:
+#        return False
+    # Paso recursivo: revisar la subcadena sin el primer y último carácter
+#    return es_palindromo(palabra[1:-1])
 
+# Algoritmo general
+#print("Verificador de palíndromos (recursivo)\n")
 
+# Solicitar palabra al usuario
+#entrada = input("Introduce una palabra (sin espacios ni tildes): ").lower()
 
+# Verificar si es palíndromo
+#if es_palindromo(entrada):
+#    print(f"La palabra '{entrada}' es un palíndromo.")
+#else:
+#    print(f"La palabra '{entrada}' no es un palíndromo.")
 
 #6) Escribí una función recursiva en Python llamada suma_digitos(n) que reciba un
 #número entero positivo y devuelva la suma de todos sus dígitos.
@@ -113,8 +151,24 @@
 #suma_digitos(9) → 9
 #suma_digitos(305) → 8 (3 + 0 + 5)
 
+# Función recursiva para sumar los dígitos de un número entero positivo
+#def suma_digitos(n):
+    # Caso base: si el número es menor a 10, se devuelve él mismo
+#    if n < 10:
+#        return n
+    # Paso recursivo: sumar el último dígito con la suma de los dígitos restantes
+#    return (n % 10) + suma_digitos(n // 10)
 
+# Algoritmo general
+#print("Suma de los dígitos de un número\n")
 
+#numero = int(input("Introduce un número entero positivo: "))
+
+#if numero < 0:
+#    print("Por favor, introduce un número positivo.")
+#else:
+#    resultado = suma_digitos(numero)
+#    print(f"La suma de los dígitos de {numero} es: {resultado}")
 
 #7) Un niño está construyendo una pirámide con bloques. En el nivel más bajo coloca n
 #bloques, en el siguiente nivel uno menos (n - 1), y así sucesivamente hasta llegar al
@@ -127,8 +181,24 @@
 #contar_bloques(2) → 3 (2 + 1)
 #contar_bloques(4) → 10 (4 + 3 + 2 + 1)
 
+# Función recursiva para contar los bloques de una pirámide
+#def contar_bloques(n):
+    # Caso base: si solo queda un nivel con 1 bloque
+#    if n == 1:
+#        return 1
+    # Paso recursivo: sumar los bloques del nivel actual con los de los niveles superiores
+#    return n + contar_bloques(n - 1)
 
+# Algoritmo general
+#print("Cantidad total de bloques para construir una pirámide\n")
 
+#nivel_inferior = int(input("Introduce el número de bloques del nivel más bajo: "))
+
+#if nivel_inferior < 1:
+#    print("Por favor, introduce un número entero positivo.")
+#else:
+#    total = contar_bloques(nivel_inferior)
+#    print(f"Se necesitan {total} bloques en total para construir la pirámide.")
 
 #8) Escribí una función recursiva llamada contar_digito(numero, digito) que reciba un
 #número entero positivo (numero) y un dígito (entre 0 y 9), y devuelva cuántas veces
@@ -137,3 +207,28 @@
 #contar_digito(12233421, 2) → 3
 #contar_digito(5555, 5) → 4 
 #contar_digito(123456, 7) → 0 
+
+# Función recursiva para contar cuántas veces aparece un dígito en un número
+#def contar_digito(numero, digito):
+    # Caso base: si el número es 0, ya no quedan dígitos → devolver 0
+#    if numero == 0:
+#        return 0
+    # Comprobar el último dígito
+#    if numero % 10 == digito:
+#        return 1 + contar_digito(numero // 10, digito)
+#    else:
+#        return contar_digito(numero // 10, digito)
+
+# Algoritmo general
+#print("Contador de dígitos en un número\n")
+
+#numero = int(input("Introduce un número entero positivo: "))
+#digito = int(input("Introduce el dígito a buscar (0-9): "))
+
+#if numero < 0 or digito < 0 or digito > 9:
+#    print("Por favor, introduce un número positivo y un dígito válido entre 0 y 9.")
+#else:
+#    cantidad = contar_digito(numero, digito)
+#    print(f"El dígito {digito} aparece {cantidad} veces en el número {numero}.")
+
+
