@@ -4,7 +4,20 @@
 #función para calcular y mostrar en pantalla el factorial de todos los números enteros
 #entre 1 y el número que indique el usuario
 
+# Función recursiva para calcular el factorial
+#def factorial(n):
+#    if n == 0 or n == 1:
+#        return 1
+#    else:
+#        return n * factorial(n - 1)
 
+# Pedir al usuario un número entero
+#numero = int(input("Ingrese un número entero: "))
+
+# Calcular y mostrar el factorial de todos los números entre 1 y el número indicado
+#print(f"\nFactoriales del 1 al {numero}:")
+#for i in range(1, numero + 1):
+#    print(f"{i}! = {factorial(i)}")
 
 
 #2) Crea una función recursiva que calcule el valor de la serie de Fibonacci en la posición
