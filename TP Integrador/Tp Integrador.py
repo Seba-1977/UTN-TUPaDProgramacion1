@@ -10,7 +10,7 @@ def normalizar_nombre(nombre: str) -> str:                         #Devuelve el 
     return texto
 
 
-def convertir_entero(valor: str) -> tuple:                      #Convierte una cadena a entero.Devuelve (True, entero) si es válido, o (False, 0) si no lo es.
+def convertir_entero(valor: str) -> tuple:                         #Convierte una cadena a entero.Devuelve (True, entero) si es válido, o (False, 0) si no lo es.
 
     valor = valor.strip()
     if valor == "":
@@ -20,7 +20,7 @@ def convertir_entero(valor: str) -> tuple:                      #Convierte una c
     return False, 0
 
 
-def cargar_paises(ruta_csv: str) -> tuple:                    #Carga la lista de países y sus datos desde un archivo CSV. 
+def cargar_paises(ruta_csv: str) -> tuple:                       #Carga la lista de países y sus datos desde un archivo CSV. 
     paises = []
     errores = []
 
